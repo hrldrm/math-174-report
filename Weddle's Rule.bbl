@@ -1,0 +1,54 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{general_quadrature}{misc}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labeltitlesource}{title}
+      \field{title}{A General Quadrature Formula}
+      \verb{urlraw}
+      \verb https://nptel.ac.in/courses/122104018/node119.html
+      \endverb
+      \verb{url}
+      \verb https://nptel.ac.in/courses/122104018/node119.html
+      \endverb
+      \warn{\item Entry 'general_quadrature' (Weddle's Rule.bib): Invalid format '12-04-18' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{thomas_weddle}{misc}{}
+      \list{publisher}{1}{%
+        {Wikipedia.org}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labeltitlesource}{title}
+      \field{title}{Thomas Weddle}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Thomas_Weddle
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Thomas_Weddle
+      \endverb
+      \warn{\item Entry 'thomas_weddle' (Weddle's Rule.bib): Invalid format '12-04-18' of date field 'urldate' - ignoring}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

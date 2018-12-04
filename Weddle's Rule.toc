@@ -1,0 +1,15 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Background}{3}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{1}{Newton-Cotes Formulas}{3}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{2}{Closed Newton-Cotes Formulas}{16}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Weddle's Rule}{20}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{1}{History}{20}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{2}{Derivation}{21}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{References}{22}{0}{3}

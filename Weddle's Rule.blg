@@ -1,0 +1,18 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[1] Config.pm:307> INFO - Logfile is 'Weddle's Rule.blg'
+[93] biber-MSWIN64:315> INFO - === 
+[141] Biber.pm:371> INFO - Reading 'Weddle's Rule.bcf'
+[251] Biber.pm:889> INFO - Found 2 citekeys in bib section 0
+[269] Biber.pm:4093> INFO - Processing section 0
+[286] Biber.pm:4254> INFO - Looking for bibtex format file 'Weddle's Rule.bib' for section 0
+[289] bibtex.pm:1523> INFO - LaTeX decoding ...
+[295] bibtex.pm:1340> INFO - Found BibTeX data source 'Weddle's Rule.bib'
+[299] Utils.pm:193> WARN - Entry 'general_quadrature' (Weddle's Rule.bib): Invalid format '12-04-18' of date field 'urldate' - ignoring
+[301] Utils.pm:193> WARN - Entry 'thomas_weddle' (Weddle's Rule.bib): Invalid format '12-04-18' of date field 'urldate' - ignoring
+[640] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[640] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[640] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[640] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[649] bbl.pm:636> INFO - Writing 'Weddle's Rule.bbl' with encoding 'UTF-8'
+[650] bbl.pm:739> INFO - Output to Weddle's Rule.bbl
+[651] Biber.pm:110> INFO - WARNINGS: 2
