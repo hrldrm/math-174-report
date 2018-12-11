@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.10)  4 DEC 2018 20:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.10)  12 DEC 2018 04:01
 entering extended mode
-**"c:/Users/hrman/Documents/math174-report/Weddle's Rule.tex"
-("c:/Users/hrman/Documents/math174-report/Weddle's Rule.tex"
+**"c:/Users/hrman/Documents/math174-report/Boole's Rule.tex"
+("c:/Users/hrman/Documents/math174-report/Boole's Rule.tex"
 LaTeX2e <2018-04-01> patch level 5
 ("C:\Users\hrman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\beamer.cls"
 Document Class: beamer 2018/09/20 v3.54 A class for typesetting presentations
@@ -1162,8 +1162,8 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 \@quotelevel=\count378
 \@quotereset=\count379
- ("Weddle's Rule.aux")
-\openout1 = `"Weddle's Rule.aux"'.
+ ("Boole's Rule.aux")
+\openout1 = `"Boole's Rule.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
 LaTeX Font Info:    ... okay on input line 103.
@@ -1261,9 +1261,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 103.
 LaTeX Info: Redefining \pageref on input line 103.
 LaTeX Info: Redefining \nameref on input line 103.
- ("Weddle's Rule.out") ("Weddle's Rule.out")
+ ("Boole's Rule.out") ("Boole's Rule.out")
 \@outlinefile=\write6
-\openout6 = `"Weddle's Rule.out"'.
+\openout6 = `"Boole's Rule.out"'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 103.
@@ -1345,29 +1345,15 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout5 = `"Weddle's Rule.bcf"'.
+\openout5 = `"Boole's Rule.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file '"Weddle's Rule".bbl' found.
- ("Weddle's Rule.bbl"
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'general_quadrature':
-(biblatex)                - Entry 'general_quadrature' (Weddle's Rule.bib): Inv
-alid format '12-04-18' of date field 'urldate' - ignoring.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'thomas_weddle':
-(biblatex)                - Entry 'thomas_weddle' (Weddle's Rule.bib): Invalid 
-format '12-04-18' of date field 'urldate' - ignoring.
-
-)
+Package biblatex Info: ... file '"Boole's Rule".bbl' found.
+ ("Boole's Rule.bbl")
 Package biblatex Info: Reference section=0 on input line 103.
 Package biblatex Info: Reference segment=0 on input line 103.
- ("Weddle's Rule.nav")
+ ("Boole's Rule.nav")
 LaTeX Font Info:    Try loading font information for U+msa on input line 107.
-
 ("C:\Users\hrman\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1384,13 +1370,14 @@ File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 ) [1{C:/Users/hrman/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <./upm.jpg>] ("Weddle's Rule.toc") [2
+ <./upm.jpg>] ("Boole's Rule.toc") [2
 
-] [3
+] ("Boole's Rule.toc") [3
 
 ] [4
 
-] [5
+]
+[5
 
 ] [6
 
@@ -1400,8 +1387,7 @@ thkerncmss.
 
 ] [9
 
-]
-[10
+] [10
 
 ] [11
 
@@ -1419,49 +1405,123 @@ thkerncmss.
 
 ] [18
 
-] [19
+]
+Overfull \hbox (12.16795pt too wide) detected at line 196
+[][]
+ []
+
+[19
 
 ] [20
 
 ] [21
 
+] [22
+
+] ("Boole's Rule.toc") [23
+
+] [24
+
+] [25
+
+] [26
+
+] ("Boole's Rule.toc") [27
+
+] [28
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\cite' on input line 269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 269.
+
+("Boole's Rule.toc") [29
+
+] [30
+
+] [31
+
+] [32
+
+] [33
+
+]
+Overfull \hbox (1.67845pt too wide) detected at line 293
+[][]
+ []
+
+[34
+
+]
+Overfull \hbox (22.78271pt too wide) detected at line 303
+[][]
+ []
+
+[35
+
+] [36
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\cite' on input line 313.
+
+("Boole's Rule.toc") [37
+
+] [38
+
+]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 340.
+
+[39
+
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 260.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 345.
 
-[22
+[40
 
  <C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamericona
 rticle.pdf>]
 \tf@nav=\write7
-\openout7 = `"Weddle's Rule.nav"'.
+\openout7 = `"Boole's Rule.nav"'.
 
 \tf@toc=\write8
-\openout8 = `"Weddle's Rule.toc"'.
+\openout8 = `"Boole's Rule.toc"'.
 
 \tf@snm=\write9
-\openout9 = `"Weddle's Rule.snm"'.
+\openout9 = `"Boole's Rule.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
- ("Weddle's Rule.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
-Package rerunfilecheck Info: File `"Weddle's Rule".out' has not changed.
-(rerunfilecheck)             Checksum: 9AF1D7BA4D9DA17F43371A48688981FF;456.
-Package logreq Info: Writing requests to '"Weddle's Rule".run.xml'.
-\openout1 = `"Weddle's Rule.run.xml"'.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 347.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 347.
+ ("Boole's Rule.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 347.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 347.
+Package rerunfilecheck Info: File `"Boole's Rule".out' has not changed.
+(rerunfilecheck)             Checksum: F1B34C9423820065BE3E2543D585746F;506.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to '"Boole's Rule".run.xml'.
+\openout1 = `"Boole's Rule.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28741 strings out of 492970
- 584004 string characters out of 3126593
- 1014665 words of memory out of 3000000
- 32008 multiletter control sequences out of 15000+200000
+ 28888 strings out of 492970
+ 586955 string characters out of 3126593
+ 1020177 words of memory out of 3000000
+ 32105 multiletter control sequences out of 15000+200000
  15965 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,20n,67p,822b,1436s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,20n,67p,821b,1570s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmcsc10.pfb><C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmex10.pfb><C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/
@@ -1479,9 +1539,9 @@ rman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ><C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb><C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb>
-Output written on "Weddle's Rule.pdf" (22 pages, 380190 bytes).
+Output written on "Boole's Rule.pdf" (40 pages, 658835 bytes).
 PDF statistics:
- 1125 PDF objects out of 1200 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2441 PDF objects out of 2487 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

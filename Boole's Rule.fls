@@ -1,7 +1,7 @@
 PWD c:/Users/hrman/Documents/math174-report
 INPUT C:/Users/hrman/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
-INPUT c:/Users/hrman/Documents/math174-report/Weddle's Rule.tex
-OUTPUT Weddle's Rule.log
+INPUT c:/Users/hrman/Documents/math174-report/Boole's Rule.tex
+OUTPUT Boole's Rule.log
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamer.cls
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamer.cls
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamerbasemodes.sty
@@ -209,7 +209,7 @@ INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamerco
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamerinnerthemedefault.sty
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamerinnerthemedefault.sty
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamericonbook.pdf
-OUTPUT Weddle's Rule.pdf
+OUTPUT Boole's Rule.pdf
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamericonbook.pdf
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamericonbook.pdf
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/beamer/beamericonbook.20.pdf
@@ -329,9 +329,9 @@ INPUT ./upm.jpg
 INPUT ./upm.jpg
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/lbx/english.lbx
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/lbx/english.lbx
-INPUT Weddle's Rule.aux
-INPUT Weddle's Rule.aux
-OUTPUT Weddle's Rule.aux
+INPUT Boole's Rule.aux
+INPUT Boole's Rule.aux
+OUTPUT Boole's Rule.aux
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
@@ -342,13 +342,13 @@ INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/namere
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
-INPUT Weddle's Rule.out
-INPUT Weddle's Rule.out
-INPUT Weddle's Rule.out
-INPUT Weddle's Rule.out
-INPUT ./Weddle's Rule.out
-INPUT ./Weddle's Rule.out
-OUTPUT Weddle's Rule.out
+INPUT Boole's Rule.out
+INPUT Boole's Rule.out
+INPUT Boole's Rule.out
+INPUT Boole's Rule.out
+INPUT ./Boole's Rule.out
+INPUT ./Boole's Rule.out
+OUTPUT Boole's Rule.out
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -362,12 +362,12 @@ INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/translator/tran
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/translator/translator-theorem-dictionary-English.dict
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/tex/latex/translator/translator-theorem-dictionary-English.dict
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmss8.tfm
-OUTPUT Weddle's Rule.bcf
-INPUT Weddle's Rule.bbl
-INPUT Weddle's Rule.bbl
-INPUT Weddle's Rule.bbl
-INPUT Weddle's Rule.nav
-INPUT Weddle's Rule.nav
+OUTPUT Boole's Rule.bcf
+INPUT Boole's Rule.bbl
+INPUT Boole's Rule.bbl
+INPUT Boole's Rule.bbl
+INPUT Boole's Rule.nav
+INPUT Boole's Rule.nav
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmss12.tfm
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmss8.tfm
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
@@ -401,8 +401,10 @@ INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/amsfonts
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmss8.tfm
 INPUT C:/Users/hrman/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
-INPUT Weddle's Rule.toc
-INPUT Weddle's Rule.toc
+INPUT Boole's Rule.toc
+INPUT Boole's Rule.toc
+INPUT Boole's Rule.toc
+INPUT Boole's Rule.toc
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmssi10.tfm
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmss10.tfm
@@ -416,16 +418,24 @@ INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/sansmath
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmssi10.tfm
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmss9.tfm
+INPUT Boole's Rule.toc
+INPUT Boole's Rule.toc
+INPUT Boole's Rule.toc
+INPUT Boole's Rule.toc
+INPUT Boole's Rule.toc
+INPUT Boole's Rule.toc
+INPUT Boole's Rule.toc
+INPUT Boole's Rule.toc
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/cm/cmtt10.tfm
-OUTPUT Weddle's Rule.nav
-OUTPUT Weddle's Rule.toc
-OUTPUT Weddle's Rule.snm
-INPUT Weddle's Rule.aux
-INPUT ./Weddle's Rule.out
-INPUT ./Weddle's Rule.out
-INPUT Weddle's Rule.run.xml
-OUTPUT Weddle's Rule.run.xml
+OUTPUT Boole's Rule.nav
+OUTPUT Boole's Rule.toc
+OUTPUT Boole's Rule.snm
+INPUT Boole's Rule.aux
+INPUT ./Boole's Rule.out
+INPUT ./Boole's Rule.out
+INPUT Boole's Rule.run.xml
+OUTPUT Boole's Rule.run.xml
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT C:/Users/hrman/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb

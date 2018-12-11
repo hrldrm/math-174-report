@@ -4,12 +4,12 @@
 \defcounter {refsection}{0}\relax 
 \beamer@subsectionintoc {1}{1}{Newton-Cotes Formulas}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {1}{2}{Closed Newton-Cotes Formulas}{16}{0}{1}
+\beamer@subsectionintoc {1}{2}{Closed Newton-Cotes Formulas}{23}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Weddle's Rule}{20}{0}{2}
+\beamer@sectionintoc {2}{Boole's Rule}{27}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{1}{History}{20}{0}{2}
+\beamer@subsectionintoc {2}{1}{History}{27}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{2}{Derivation}{21}{0}{2}
+\beamer@subsectionintoc {2}{2}{Derivation \cite {booles_quadrature}}{29}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{References}{22}{0}{3}
+\beamer@subsectionintoc {2}{3}{Example Comparison \cite {calculator}}{37}{0}{2}

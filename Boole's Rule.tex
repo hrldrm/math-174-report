@@ -1,0 +1,349 @@
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+\documentclass{beamer}
+
+% There are many different themes available for Beamer. A comprehensive
+% list with examples is given here:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+% You can uncomment the themes below if you would like to use a different
+% one:
+% \usetheme{AnnArbor}
+% \usetheme{Antibes}
+% \usetheme{Bergen}
+% \usetheme{Berkeley}
+% \usetheme{Berlin}
+% \usetheme{Boadilla}
+% \usetheme{boxes}
+% \usetheme{CambridgeUS}
+% \usetheme{Copenhagen}
+\usetheme{Darmstadt}  
+% \usetheme{default}
+% \usetheme{Frankfurt}
+% \usetheme{Goettingen}
+% \usetheme{Hannover}
+% \usetheme{Ilmenau}
+% \usetheme{JuanLesPins}
+% \usetheme{Luebeck}
+% \usetheme{Madrid}
+% \usetheme{Malmoe}
+% \usetheme{Marburg}
+% \usetheme{Montpellier}
+% \usetheme{PaloAlto}
+% \usetheme{Pittsburgh}
+% \usetheme{Rochester}
+% \usetheme{Singapore}
+% \usetheme{Szeged}
+% \usetheme{Warsaw}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{biblatex}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{pgfgantt}
+
+\addbibresource{Boole's Rule.bib}
+\graphicspath{{./figures/}}
+
+\title{Boole's Rule}
+
+% A subtitle is optional and this may be deleted
+\subtitle{Numerical Integration Method}
+
+\author{Harold R. Mansilla\inst{1}}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[University of the Philippines Manila] % (optional, but mostly needed)
+{
+  \inst{1}%
+  Department of Physical Sciences and Mathematics\\
+  University of the Philippines Manila
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{December 5, 2018}
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+% \subject{Theoretical Computer Science}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+\pgfdeclareimage[height=0.5cm]{university-logo}{upm}
+\logo{\pgfuseimage{university-logo}}
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsubsection]
+  \end{frame}
+}
+
+% Let's get started
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\section{Background}
+
+\subsection{Newton-Cotes Formulas}
+
+\begin{frame}{Newton-Cotes Formulas}
+  \begin{itemize}
+    \item The \alert{Newton-Cotes formulas} are a family of \textbf{numerical integration} techniques. \pause 
+    \item They are also known as \textit{Quadrature formulas}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Langrange Polynomial Definition}
+  The general process of approximating the definite integral is as follows:
+    \begin{itemize}
+       \item Given a function $f(x)$ to be integrated over some interval $[a,b]$ \pause
+       \item Divide the function into $n$ equal parts such that $f_n = f(x_n)$ and $h = \frac{b - a}{n}$
+       \begin{itemize}
+         \item $f_n$ is the function value at the point $x_n$
+         \item $h$ (called the \textit{step size}) is the length of each interval such that $x_{n+1} = x_n + h$
+       \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Langrange Polynomial Definition}
+  % The general process of approximating the definite integral is as follows:
+    \begin{itemize}
+        \item Express the function as a \textbf{Langrange Interpolating Polynomial} $P(x)$ \pause
+       \begin{equation}
+        \begin{aligned}
+          \int_{a}^{b} f(x) \mathop{dx} &\approx \int_{a}^{b} P(x) \mathop{dx} \\ \pause
+          &\approx \int_{a}^{b} \left(\sum_{i=0}^{n} f(x_i) L_i(x)\right) \mathop{dx} \\ \pause
+          &\approx \sum_{i=0}^{n} f(x_i) \int_{a}^{b} L_i(x) \mathop{dx}
+        \end{aligned}        
+       \end{equation} \pause
+       \begin{itemize}
+         \item \textit{Note:} $\int_{a}^{b} L_i(x) \mathop{dx}$ can be expressed as $w_i$ or the \textit{weights}
+       \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Langrange Polynomial Definition}
+  % The general process of approximating the definite integral is as follows:
+    \begin{itemize}
+      \item Compute the value of the summation.
+      \begin{equation} 
+        \sum_{i=0}^{n} f(x_i) w_i
+      \end{equation}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{General Quadrature Formula \cite{general_quadrature}}
+  Alternatively, we can express the approximation of the definite integral by \textit{Newton's forward difference interpolating polynomial}. \pause
+
+  Let $f(x_k) = y_k$ be the nodal value at point $x_k$ for $k = 0,1,\dots,x_n$ where $x_0 = a$ and $x_n = x_0 + nh = b$ \pause 
+
+      \begin{equation*}
+        \begin{aligned}
+          \int_{a}^{b} f(x) \mathop{dx} &\approx \int_a^b P(x) \mathop{dx} \\ \pause 
+          &= \int_a^b \sum_{k=0}^n \binom{i}{k} \Delta^k y_0 \mathop{dx}
+        \end{aligned}
+      \end{equation*}
+\end{frame}
+
+\begin{frame}{General Quadrature Formula \cite{general_quadrature}}
+      \begin{equation}
+        \begin{aligned}
+          \int_{a}^{b} f(x) \mathop{dx} &= \int_a^b \left[ y_0 + \dfrac{\Delta y_0}{h}\left(x - x_0\right) + \dfrac{\Delta^2 y_0}{2!h^2}\left(x - x_0\right)\left(x - x_1\right) \right. \\ 
+          &+ \dfrac{\Delta^3 y_0}{3!h^3}\left(x - x_0\right)\left(x - x_1\right)\left(x - x_2\right) \\
+          &+ \left. \dfrac{\Delta^4 y_0}{4!h^4}\left(x - x_0\right)\left(x - x_1\right)\left(x - x_2\right)\left(x - x_3\right) + \dots \right] \mathop{dx}
+        \end{aligned}
+      \end{equation}
+\end{frame}
+
+\begin{frame}{General Quadrature Formula \cite{general_quadrature}}
+  Using the transformation $x = x_0 + hu$ or $u = \dfrac{x - x_0}{h}$ and $du = \dfrac{x}{h} \mathop{dx}$
+      \begin{equation*}
+        \begin{aligned}
+          \int_{a}^{b} f(x) \mathop{dx} &= h \int_0^n \left[ y_0 + u\Delta y_0 + \dfrac{\Delta^2 y_0}{2!} u\left(u - 1\right) \right. \\
+          &+ \dfrac{\Delta^3 y_0}{4!} u\left(u - 1\right)\left(u - 2\right) + \dfrac{\Delta^4 y_0}{4!} u\left(u - 1\right)\left(u - 2\right)\left(u - 3\right) \\
+          & + \left. \dots \right] du
+        \end{aligned}
+      \end{equation*}
+\end{frame}
+
+\begin{frame}{General Quadrature Formula \cite{general_quadrature}}
+  Integrating the right-hand side, we have:
+      \begin{equation}\label{quadrature}
+        \begin{split}
+          \int_{a}^{b} f(x) \mathop{dx} &= h\left[ny_0 + \frac{n^2}{2}\Delta y_0 + \frac{\Delta^2 y_0}{2!}\left(\frac{n^3}{3} - \frac{n^2}{2}\right) \right. \\
+          &+ \frac{\Delta^3 y_0}{3!}\left(\frac{n^4}{4} - n^3 + n^2\right) \\ 
+          &+ \left. \frac{\Delta^4 y_0}{4!}\left(\frac{n^5}{5} - \frac{3n^4}{2} + \frac{11n^3}{3} - 3n^2\right) + \dots \right]
+        \end{split}
+      \end{equation}
+\end{frame}
+
+\begin{frame}{Newton-Cotes Formulas}{Closed Newton-Cotes Formulas}
+  \begin{itemize}
+    \item A Newton-Cotes formula is \textbf{closed} if it uses the function value at all points
+    \begin{itemize}
+      \item i.e. The interval may be $[x_0,x_{n-1}]$
+    \end{itemize} 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Newton-Cotes Formulas}{Open Newton-Cotes Formulas}
+  \begin{itemize}
+    \item A Newton-Cotes formula is \textbf{open} if it does not use function values at the endpoints
+    \begin{itemize}
+      \item i.e. The interval may be $[x_1,x_{n-2}]$
+    \end{itemize} 
+    \item Will not be discussed further in this report
+  \end{itemize}
+\end{frame}
+
+\subsection{Closed Newton-Cotes Formulas}
+
+\begin{frame}{Examples of Closed Newton-Cotes Formulas}{Trapezoid Rule}
+    2-point closed Newton-Cotes formula $\left(n = 1\right)$
+    \begin{equation}
+      \int_a^b f(x) \mathop{dx} = \dfrac{h}{2} \left(f_0 + f_1\right)
+    \end{equation}
+\end{frame}
+
+\begin{frame}{Examples of Closed Newton-Cotes Formulas}{Simpson's 1/3 Rule}
+    3-point closed Newton-Cotes formula $\left(n = 2\right)$
+    \begin{equation}
+      \int_a^b f(x) \mathop{dx} = \dfrac{h}{3} \left(f_0 + 4f_1 + f_2\right)
+    \end{equation}
+\end{frame}
+
+\begin{frame}{Examples of Closed Newton-Cotes Formulas}{Simpson's 3/8 Rule}
+    4-point closed Newton-Cotes formula $\left(n = 3\right)$
+    \begin{equation}
+      \int_a^b f(x) \mathop{dx} = \dfrac{3h}{8} \left(f_0 + 3f_1 + 3f_2 + f_3\right)
+    \end{equation}
+\end{frame}
+
+% \begin{frame}{Examples of Closed Newton-Cotes Formulas}{Boole's Rule}
+%     5-point closed Newton-Cotes formula $\left(n = 4\right)$
+%     \begin{equation}
+%       \int_a^b f(x) \mathop{dx} = \dfrac{2h}{45} \left(7f_1 + 32f_2 + 12f_3 + 32f_4 + 7f_5\right)
+%     \end{equation}
+% \end{frame}
+
+\section{Boole's Rule}
+
+\subsection{History}
+
+\begin{frame}{History \cite{booles_history}}
+  \begin{itemize}
+    \item Named after \textbf{George Boole}, an English mathematician
+    \item Mistakenly called \textit{Bode's Rule} due to a propagation of a typographical error
+  \end{itemize}
+\end{frame}
+
+\subsection{Derivation \cite{booles_quadrature}}
+
+\begin{frame}{Derivation}
+  Consider the function $y = f(x)$ over the interval $[x_0,\dots,x_4]$. Boole's rule is an approximation to the integral of $f(x)$ over $[x_0,x_4]$. \\ \pause 
+  From Equation \ref{quadrature} with $a = x_0$ and $b = x_4$ \\ \pause 
+  Let $n = 4$, such that $f(x)$ can be approximated by a 4th degree polynomial \\
+  \begin{equation*}
+    \begin{aligned}
+      \int_a^b f(x) \mathop{dx} &= \int_{x_0}^{x_4} f(x) \mathop{dx} \\ \pause 
+      &= \int_a^{a+4h} f(x) \mathop{dx}
+    \end{aligned}
+  \end{equation*}
+\end{frame}
+
+\begin{frame}{Derivation}
+  \begin{equation*}
+    \begin{aligned}
+      &= h\left[4f(a) + 8\Delta f_a + \left(\dfrac{64}{3} - 8\right)\dfrac{\Delta^2 f(a)}{2!} + \left(64 - 64 + 16\right)\dfrac{\Delta^3 f(a)}{3!} \right. \\ 
+      &+ \left. \left(\dfrac{1024}{5} - 384 + \dfrac{704}{3} - 48\right)\dfrac{\Delta^4 f(a)}{4!}\right] \\
+      &= h\left[4f(a) + 8\left\{f(a + h) - f(a)\right\} + \dfrac{20}{3}\left\{f(a + 2h) - 2f(a + h) \right. \right. \\ 
+      &+ \left. f(a)\right\} + \dfrac{8}{3} \left\{f(a + 3h) - 3f(a + 2h) + 3f(a + h) - f(a)\right\} \\
+      &+ \left. \dfrac{14}{45}\left\{f(a + 4h) - 4f(a + 3h) + 6f(a + 2h) - 4f(a + h) + f(a)\right\} \right] 
+    \end{aligned}
+  \end{equation*}
+\end{frame}
+
+\begin{frame}{Derivation}
+  \begin{equation*}
+    \begin{aligned}
+      &= \dfrac{h}{45}\left[14f(a) + 64f(a + h) + 24(a + 2h) + 64f(a + 3h) + 14f(a + 4h)\right] \\
+      &= \dfrac{2h}{45}\left[7f(a) + 32f(a + h) + 12f(a + 2h) + 32f(a + 3h) + 7f(a + 4h)\right] \\ 
+      &= \dfrac{2h}{45}\left[7f_0 + 32f_1 + 12f_2 + 32f_3 + 7f_4\right]
+    \end{aligned}
+  \end{equation*}
+\end{frame}
+
+\begin{frame}{Derivation}
+  \begin{definition}{Boole's Rule}   
+    \begin{equation}\label{booles}
+        \int_{x_0}^{x_4} f(x) \mathop{dx} = \dfrac{2h}{45}\left[7f_0 + 32f_1 + 12f_2 + 32f_3 + 7f_4\right]
+    \end{equation}
+  \end{definition}
+\end{frame}
+
+\subsection{Example Comparison \cite{calculator}}
+
+\begin{frame}
+  Solve the following using analytic method, Trapezoidal rule, Simpson's 1/3 rule, Simpson's 3/8 rule, and \alert{Boole's Rule}:
+  \begin{itemize}
+    \item $\int_0^1 \cos{x} \mathop{dx}$
+    \item $\int_2^4 \ln{x} \mathop{dx}$
+    \item $\int_{-3}^1 6x^2 - 5x + 2 \mathop{dx}$
+    \item $\int_{1}^2 x^4 +4x^3 + 9x^2 + 2x + 10 \mathop{dx}$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{table}[]
+\centering
+\caption{Results}
+\label{my-label}
+\begin{tabular}{|c|c|l|l|l|}
+\hline
+\textit{\textbf{Method}} & \multicolumn{4}{c|}{\textit{\textbf{Solution}}}                   \\ \hline
+Analytic                 & 0.84147          & 2.15888          & 84          & 55.2          \\ \hline
+Trapezoidal              & 0.77015          & 2.07944          & 148         & 62            \\ \hline
+Simpson's 1/3            & 0.84177          & 2.15796          & 84          & 55.20833      \\ \hline
+Simpson's 3/8            & 0.84160          & 2.15846          & 84          & 55.20370      \\ \hline
+\textbf{Boole's}         & \textbf{0.84147} & \textbf{2.15887} & \textbf{84} & \textbf{55.2} \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}[t,allowframebreaks]
+  \frametitle{References}
+  \printbibliography
+\end{frame}
+
+\end{document}
+
+
