@@ -37,27 +37,31 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {13}{13}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{1}{6}{14/17}{Newton-Cotes Formulas}{0}}
+\headcommand {\slideentry {1}{1}{6}{14/16}{Newton-Cotes Formulas}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {14}{17}}
+\headcommand {\beamer@framepages {14}{16}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{1}{7}{18/18}{Newton-Cotes Formulas}{0}}
+\headcommand {\slideentry {1}{1}{7}{17/17}{Newton-Cotes Formulas}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {17}{17}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {1}{1}{8}{18/18}{Newton-Cotes Formulas}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {18}{18}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{1}{8}{19/19}{Newton-Cotes Formulas}{0}}
+\headcommand {\slideentry {1}{1}{9}{19/19}{Newton-Cotes Formulas}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {19}{19}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{1}{9}{20/20}{Newton-Cotes Formulas}{0}}
+\headcommand {\slideentry {1}{1}{10}{20/20}{Newton-Cotes Formulas}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {20}{20}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{1}{10}{21/21}{Newton-Cotes Formulas}{0}}
+\headcommand {\slideentry {1}{1}{11}{21/21}{Newton-Cotes Formulas}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {21}{21}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{1}{11}{22/22}{Newton-Cotes Formulas}{0}}
+\headcommand {\slideentry {1}{1}{12}{22/22}{Newton-Cotes Formulas}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {22}{22}}
 \defcounter {refsection}{0}\relax 
@@ -152,4 +156,4 @@
 \headcommand {\beamer@subsectionpages {37}{40}}
 \headcommand {\beamer@sectionpages {27}{40}}
 \headcommand {\beamer@documentpages {40}}
-\headcommand {\gdef \inserttotalframenumber {28}}
+\headcommand {\gdef \inserttotalframenumber {29}}

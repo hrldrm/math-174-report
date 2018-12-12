@@ -168,27 +168,26 @@
 
       \begin{equation*}
         \begin{aligned}
-          \int_{a}^{b} f(x) \mathop{dx} &\approx \int_a^b P(x) \mathop{dx} \\ \pause 
-          &= \int_a^b \sum_{k=0}^n \binom{i}{k} \Delta^k y_0 \mathop{dx}
+          \int_{a}^{b} f(x) \mathop{dx} &\approx \int_a^b P(x) \mathop{dx}
         \end{aligned}
       \end{equation*}
 \end{frame}
 
 \begin{frame}{General Quadrature Formula \cite{general_quadrature}}
-      \begin{equation}
+      \begin{equation*}
         \begin{aligned}
-          \int_{a}^{b} f(x) \mathop{dx} &= \int_a^b \left[ y_0 + \dfrac{\Delta y_0}{h}\left(x - x_0\right) + \dfrac{\Delta^2 y_0}{2!h^2}\left(x - x_0\right)\left(x - x_1\right) \right. \\ 
+          \int_{a}^{b} f(x) \mathop{dx} &\approx \int_a^b \left[ y_0 + \dfrac{\Delta y_0}{h}\left(x - x_0\right) + \dfrac{\Delta^2 y_0}{2!h^2}\left(x - x_0\right)\left(x - x_1\right) \right. \\ 
           &+ \dfrac{\Delta^3 y_0}{3!h^3}\left(x - x_0\right)\left(x - x_1\right)\left(x - x_2\right) \\
           &+ \left. \dfrac{\Delta^4 y_0}{4!h^4}\left(x - x_0\right)\left(x - x_1\right)\left(x - x_2\right)\left(x - x_3\right) + \dots \right] \mathop{dx}
         \end{aligned}
-      \end{equation}
+      \end{equation*}
 \end{frame}
 
 \begin{frame}{General Quadrature Formula \cite{general_quadrature}}
-  Using the transformation $x = x_0 + hu$ or $u = \dfrac{x - x_0}{h}$ and $du = \dfrac{x}{h} \mathop{dx}$
+  Using the transformation $x = x_0 + hu$ or letting $u = \dfrac{x - x_0}{h}$ and $du = \dfrac{1}{h} \mathop{dx}$
       \begin{equation*}
         \begin{aligned}
-          \int_{a}^{b} f(x) \mathop{dx} &= h \int_0^n \left[ y_0 + u\Delta y_0 + \dfrac{\Delta^2 y_0}{2!} u\left(u - 1\right) \right. \\
+          \int_{a}^{b} f(x) \mathop{dx} &\approx h \int_0^n \left[ y_0 + u\Delta y_0 + \dfrac{\Delta^2 y_0}{2!} u\left(u - 1\right) \right. \\
           &+ \dfrac{\Delta^3 y_0}{4!} u\left(u - 1\right)\left(u - 2\right) + \dfrac{\Delta^4 y_0}{4!} u\left(u - 1\right)\left(u - 2\right)\left(u - 3\right) \\
           & + \left. \dots \right] du
         \end{aligned}
@@ -197,13 +196,25 @@
 
 \begin{frame}{General Quadrature Formula \cite{general_quadrature}}
   Integrating the right-hand side, we have:
-      \begin{equation}\label{quadrature}
+      \begin{equation*}
         \begin{split}
-          \int_{a}^{b} f(x) \mathop{dx} &= h\left[ny_0 + \frac{n^2}{2}\Delta y_0 + \frac{\Delta^2 y_0}{2!}\left(\frac{n^3}{3} - \frac{n^2}{2}\right) \right. \\
+          \int_{a}^{b} f(x) \mathop{dx} &\approx h\left[ny_0 + \frac{n^2}{2}\Delta y_0 + \frac{\Delta^2 y_0}{2!}\left(\frac{n^3}{3} - \frac{n^2}{2}\right) \right. \\
           &+ \frac{\Delta^3 y_0}{3!}\left(\frac{n^4}{4} - n^3 + n^2\right) \\ 
           &+ \left. \frac{\Delta^4 y_0}{4!}\left(\frac{n^5}{5} - \frac{3n^4}{2} + \frac{11n^3}{3} - 3n^2\right) + \dots \right]
         \end{split}
-      \end{equation}
+      \end{equation*}
+\end{frame}
+
+\begin{frame}{General Quadrature Formula \cite{general_quadrature}}
+  \begin{definition}{General Quadrature Formula}
+    \begin{equation}\label{quadrature}
+      \begin{split}
+        \int_{a}^{b} f(x) \mathop{dx} &\approx h\left[ny_0 + \frac{n^2}{2}\Delta y_0 + \frac{\Delta^2 y_0}{2!}\left(\frac{n^3}{3} - \frac{n^2}{2}\right) \right. \\
+        &+ \frac{\Delta^3 y_0}{3!}\left(\frac{n^4}{4} - n^3 + n^2\right) \\ 
+        &+ \left. \frac{\Delta^4 y_0}{4!}\left(\frac{n^5}{5} - \frac{3n^4}{2} + \frac{11n^3}{3} - 3n^2\right) + \dots \right]
+      \end{split}
+    \end{equation}
+  \end{definition}
 \end{frame}
 
 \begin{frame}{Newton-Cotes Formulas}{Closed Newton-Cotes Formulas}
@@ -262,7 +273,7 @@
 \begin{frame}{History \cite{booles_history}}
   \begin{itemize}
     \item Named after \textbf{George Boole}, an English mathematician
-    \item Mistakenly called \textit{Bode's Rule} due to a propagation of a typographical error
+    \item Mistakenly called \textit{Bode's Rule} due to propagation of a typographical error
   \end{itemize}
 \end{frame}
 
@@ -283,7 +294,7 @@
 \begin{frame}{Derivation}
   \begin{equation*}
     \begin{aligned}
-      &= h\left[4f(a) + 8\Delta f_a + \left(\dfrac{64}{3} - 8\right)\dfrac{\Delta^2 f(a)}{2!} + \left(64 - 64 + 16\right)\dfrac{\Delta^3 f(a)}{3!} \right. \\ 
+      &= h\left[4f(a) + 8\Delta f(a) + \left(\dfrac{64}{3} - 8\right)\dfrac{\Delta^2 f(a)}{2!} + \left(64 - 64 + 16\right)\dfrac{\Delta^3 f(a)}{3!} \right. \\ 
       &+ \left. \left(\dfrac{1024}{5} - 384 + \dfrac{704}{3} - 48\right)\dfrac{\Delta^4 f(a)}{4!}\right] \\
       &= h\left[4f(a) + 8\left\{f(a + h) - f(a)\right\} + \dfrac{20}{3}\left\{f(a + 2h) - 2f(a + h) \right. \right. \\ 
       &+ \left. f(a)\right\} + \dfrac{8}{3} \left\{f(a + 3h) - 3f(a + 2h) + 3f(a + h) - f(a)\right\} \\
